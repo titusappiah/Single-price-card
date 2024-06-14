@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+/* .container{
+    border: 2px solid black;
+    width: 40%;
+    margin: auto;
+}
+
+.top_structure{
+    width: 100%;
+    height: 25vh;
+    border: 2px solid rgb(156, 55, 55);
+    display: flex;
+    flex-direction: column;
+}
+.top_structure .content{
+    width: 90%;
+    height: 80%;
+    border: 2px solid rgb(59, 6, 174);
+    margin: auto auto;
+}
+.top_structure h1{
+    font-size: 2rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+} */
+body {
+  background-color: #d8ecf9;
+  color: #9aa7be;
+}
+/* body .price_container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px #0050ab4a;
+} */
+
+.price_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* border: 2px solid red; */
+  width: 45%;
+  height: 55vh;
+  margin: 10rem auto;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 #0050ab2d;
+}
+
+.pricing_header {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+.pricing_header h1 {
+  color: #2ab3b1;
+  font-size: 1.7rem;
+}
+
+.pricing_header h4 {
+  color: #c0df33;
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.pricing_header p {
+  padding-top: 0.5rem;
+  width: 90%;
+}
+
+.price_description {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #2ab3b1;
+  color: white;
+  border-radius: 0px 0px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
+.price_description h5 {
+  font-size: 1.2rem;
+}
+
+.price_description p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button{
+    background-color: #c0df33;
+    border: none;
+    height: 6vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093);
+    color: white;
+    font-weight: bold;
+}
+
+.why_us {
+  grid-area: 2 / 2 / 3 / 3;
+  color: white;
+  background-color: #4ABFBD;
+  border-radius: 0px 0px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.why_us h5{
+    font-size: 1.2rem;
+}
+
+.why_us p{
+    padding-top: 1.7rem;
+}
